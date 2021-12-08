@@ -7,7 +7,6 @@ export function SignInButton() {
   const { status, data } = useSession();
 
   const isUserLoggedIn = status === "authenticated" ? true : false;
-  console.log(isUserLoggedIn, status);
 
   return isUserLoggedIn ? (
     <button
